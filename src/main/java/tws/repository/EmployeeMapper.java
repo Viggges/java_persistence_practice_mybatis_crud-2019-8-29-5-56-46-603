@@ -18,4 +18,6 @@ public interface EmployeeMapper {
 	void updateOne(@Param("id") String id, @Param("employee") Employee employee);
 
 	void deleteOne(@Param("id") String id);
+
+	List<Employee> selectPage(Integer page, Integer pageSize);
 }
